@@ -26,7 +26,7 @@ export default function Auth({type}: {type: "signup" | "signin"}) {
   }
   return <div className="flex justify-center items-center h-screen flex-col">
     <h1 className="text-4xl font-bold mb-2">Login into account</h1>
-    <h4>Already have a account? <Link className="underline text-gray-500" to={type === "signup"? "/signin": "/signup"}>{type === "signup"? "signin": "signup"}</Link></h4>
+    <h4>Already have a account? <Link className="underline text-gray-500" to={type === "signup"? "/signin": "/"}>{type === "signup"? "signin": "signup"}</Link></h4>
     <div className="w-1/2 flex flex-col justify-center gap-2 mt-4">
         <InputBox label="Email" placeholder="jayant@gmail.com..." onChange={(e) => {
           setPostInputs({
